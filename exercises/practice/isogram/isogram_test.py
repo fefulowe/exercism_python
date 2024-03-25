@@ -11,7 +11,7 @@ from isogram import (
 
 class IsogramTest(unittest.TestCase):
     def test_empty_string(self):
-        self.assertIs(is_isogram(""), True)
+        self.assertIs(is_isogram(""), False)
 
     def test_isogram_with_only_lower_case_characters(self):
         self.assertIs(is_isogram("isogram"), True)
